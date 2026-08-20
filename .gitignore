@@ -1,0 +1,17 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs / local server output
+*.log
+
+# Secrets — never commit form backend keys or API tokens
+.env
+.env.local
