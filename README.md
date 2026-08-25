@@ -35,7 +35,7 @@ How It Works · Quote Form · About · Contact + Map · Footer
 
 **Brand colors** — top of `styles.css`, the `:root` block (`--navy`, `--blue`, `--red`, `--yellow`).
 
-**Phone / email / address** — search `index.html` for `214-341-7778`, `sales@bendexprintandcopy.com`,
+**Phone / email / address** — search `index.html` for `214-341-7778`, `sales@bendexprint.com`,
 or `10875`. They appear in the topbar, hero, quote section, contact section, footer,
 the mobile call button, and the JSON-LD schema block in `<head>`.
 
@@ -63,8 +63,26 @@ These were NOT in the source material and are currently placeholders:
       Basin) so submissions hit the inbox directly and support file uploads.
       See the `form.addEventListener('submit', ...)` block in `script.js`.
 - [ ] Add real photos of the shop and past work
-- [ ] Point the domain (bendexprintandcopy.com) at the host
+- [ ] Point the domain (bendexprint.com) at the host — see "Hosting" below
+- [ ] **Set up mail for `sales@bendexprint.com`** — the site now advertises this
+      address but the domain has no MX records, so mail to it currently bounces.
+      Cloudflare Email Routing (free) will forward it to an existing inbox.
 - [ ] Set up Google Business Profile so the map/hours match
+
+## Hosting
+
+Cloudflare Pages, deployed from this repo's `main` branch. No build command;
+output directory is the repo root. `_redirects` sends www to the apex and
+`_headers` sets cache and security headers — both are read by Pages at deploy.
+
+## ⚠️ Note on bendexprintandcopy.com
+
+That domain (the client's previous one) has an MX record at priority 0 pointing
+to `smtp.sercureserver.net` — a typosquat of GoDaddy's `smtp.secureserver.net`,
+registered to an unrelated third party and parked on ZTOMY nameservers. It takes
+precedence over the legitimate Google Workspace records beneath it. Treat any
+mail sent to `@bendexprintandcopy.com` as potentially intercepted until that
+record is removed.
 
 ## Source material
 
