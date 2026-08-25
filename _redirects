@@ -1,0 +1,2 @@
+# Send www to the apex so there is one canonical URL.
+https://www.bendexprint.com/*  https://bendexprint.com/:splat  301

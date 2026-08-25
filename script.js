@@ -183,7 +183,7 @@
       var val = function (id) { return ($(id) || {}).value || ''; };
 
       var lines = [
-        'QUOTE REQUEST — bendexprintandcopy.com',
+        'QUOTE REQUEST — bendexprint.com',
         '',
         'Name:       ' + val('#f-name'),
         'Business:   ' + (val('#f-company') || '—'),
