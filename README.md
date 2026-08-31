@@ -75,14 +75,10 @@ Cloudflare Pages, deployed from this repo's `main` branch. No build command;
 output directory is the repo root. `_redirects` sends www to the apex and
 `_headers` sets cache and security headers — both are read by Pages at deploy.
 
-## ⚠️ Note on bendexprintandcopy.com
+## Note on bendexprintandcopy.com
 
-That domain (the client's previous one) has an MX record at priority 0 pointing
-to `smtp.sercureserver.net` — a typosquat of GoDaddy's `smtp.secureserver.net`,
-registered to an unrelated third party and parked on ZTOMY nameservers. It takes
-precedence over the legitimate Google Workspace records beneath it. Treat any
-mail sent to `@bendexprintandcopy.com` as potentially intercepted until that
-record is removed.
+The client's previous domain has a mail-routing issue that needs attention.
+Details are in a private note kept outside this repository — ask Brian.
 
 ## Source material
 
