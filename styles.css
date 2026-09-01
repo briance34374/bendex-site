@@ -468,7 +468,7 @@ ul,ol{ margin:0; padding:0; list-style:none; }
    ========================================================================== */
 .ftr{ background:var(--navy); color:#96A9C4; padding:64px 0 0; }
 .ftr__in{ display:grid; grid-template-columns:2fr 1fr 1fr 1.25fr; gap:44px; padding-bottom:48px; }
-.brand--ftr{ --lg-ink:#8FA3C0; }
+.brand--ftr{ --lg-halo:#0B2545; --lg-ink:#8FA3C0; }
 .brand--ftr .brand__txt em{ color:#7E93B1; }
 .ftr__brand p{ font-size:15px; margin:18px 0 0; max-width:34ch; line-height:1.65; }
 .ftr__tag{ color:var(--yellow) !important; font-weight:800; letter-spacing:-.01em; font-size:16px !important; margin-top:12px !important; }
