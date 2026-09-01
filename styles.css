@@ -156,7 +156,7 @@ ul,ol{ margin:0; padding:0; list-style:none; }
 /* ==========================================================================
    Shared section furniture
    ========================================================================== */
-.sec{ padding:96px 0; }
+.sec{ padding:96px 0; background:var(--yellow); }
 .sec--tint{ background:var(--tint); }
 .sec--flush{ padding-bottom:0; }
 .sec--dark{ background:var(--navy); color:#C3D0E2; position:relative; overflow:hidden; }
@@ -212,8 +212,9 @@ ul,ol{ margin:0; padding:0; list-style:none; }
 }
 
 .hero h1{
-  color:#fff; font-size:clamp(38px, 5.6vw, 64px); font-weight:900;
-  letter-spacing:-.035em; line-height:1.05; margin:0 0 22px;
+  color:#fff; font-size:clamp(11px, 1.62vw, 23px); font-weight:900;
+  letter-spacing:-.035em; line-height:1.15; margin:0 0 22px;
+  white-space:nowrap;
 }
 .hero .hl{
   background:linear-gradient(105deg, var(--yellow) 0%, var(--yellow-300) 100%);
@@ -444,7 +445,7 @@ ul,ol{ margin:0; padding:0; list-style:none; }
 .about__quote p{
   position:relative; font-size:28px; font-weight:900; letter-spacing:-.03em; line-height:1.25; margin:0;
 }
-.about__quote span{ display:block; margin-top:14px; font-size:16px; font-weight:600; color:var(--yellow); letter-spacing:-.01em; }
+.about__quote span{ display:block; margin-top:14px; font-size:inherit; font-weight:900; color:var(--yellow); letter-spacing:-.03em; }
 
 /* ==========================================================================
    Contact + map
@@ -511,6 +512,7 @@ ul,ol{ margin:0; padding:0; list-style:none; }
 @media (max-width:900px){
   html{ scroll-padding-top:80px; }
   .hero__in{ grid-template-columns:1fr; gap:44px; padding-bottom:64px; }
+  .hero h1{ font-size:clamp(9px, 3.2vw, 30px); }
   .hero{ padding-top:56px; }
   .split,.quote,.about,.contact{ grid-template-columns:1fr; gap:40px; }
   .contact{ padding-bottom:72px; }
