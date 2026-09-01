@@ -20,6 +20,7 @@
   --line:      #E3E8EF;
   --line-soft: #EEF1F6;
   --tint:      #F6F8FB;
+  --cream:     #FDF7E8;
   --paper:     #FFFFFF;
 
   --r-sm: 8px;
@@ -157,7 +158,7 @@ ul,ol{ margin:0; padding:0; list-style:none; }
    Shared section furniture
    ========================================================================== */
 .sec{ padding:96px 0; background:var(--yellow); }
-.sec--tint{ background:var(--tint); }
+.sec--tint{ background:var(--cream); }
 .sec--flush{ padding-bottom:0; }
 .sec--dark{ background:var(--navy); color:#C3D0E2; position:relative; overflow:hidden; }
 .sec--dark::before{
