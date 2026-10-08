@@ -202,7 +202,7 @@
       ];
 
       var subject = 'Quote request: ' + val('#f-service') + ' — ' + val('#f-name');
-      var href = 'mailto:sales@bendexprint.com'
+      var href = 'mailto:onebendex@gmail.com'
         + '?subject=' + encodeURIComponent(subject)
         + '&body=' + encodeURIComponent(lines.join('\n'));
 
